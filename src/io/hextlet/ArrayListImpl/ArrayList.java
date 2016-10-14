@@ -43,8 +43,9 @@ public class ArrayList<T> extends AbstractList<T> {
 
     @Override
     public T set(int index, T element) {
+        T oldValue = this.m[index];
         this.m[index] = element;
-        return this.m[index];
+        return oldValue;
     }
 
     @Override
